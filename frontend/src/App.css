@@ -1,1 +1,14 @@
- 
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  
+  .center-button {
+    display: inline-block;
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+  }

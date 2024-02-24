@@ -5,6 +5,7 @@ import React from 'react'
 import './App.css'
 import CreateTodo from '../components/CreateTodo'
 import Todos from '../components/Todos'
+import CreateRandomTodo from '../components/RandomTask'
 function App() {
  const [todos,setTodos]=useState([])
  fetch("http://localhost:3000/todos").then(async function(res){
@@ -13,14 +14,16 @@ function App() {
  })
   return (
     <>
-      <div>
+    <div>
+      <div className='button-container'>
         <CreateTodo />
-         
+        <CreateRandomTodo />
       </div>
       <Todos todos={todos} />
-       
+      </div>
     </>
   )
 }
+
 
 export default App
