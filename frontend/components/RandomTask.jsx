@@ -18,7 +18,7 @@ function CreateRandomTodo(){
     console.log(response.data)
     }
     return <>
-        <button className="center-button" onClick={handleClick}>Get a Random Todo</button>
+        <button className="center-button" onClick={handleClick}>Get a Random Advice</button>
     </>
 }
 export default CreateRandomTodo
